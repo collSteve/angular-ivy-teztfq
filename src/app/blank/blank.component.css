@@ -1,0 +1,6 @@
+#blankDiv {
+  width: var(--blank-width);
+  height: var(--bar-height);
+  position: sticky;
+  top: var(--top-game-bar-height);
+}

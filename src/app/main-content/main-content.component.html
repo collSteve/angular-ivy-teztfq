@@ -1,0 +1,15 @@
+<section id="game">
+  <app-game></app-game>
+</section>
+<section id="gameDescription">
+  <div *ngFor="let pair of gameDescription">
+    <p *ngIf="pair.paragraph != ''">{{pair.paragraph}}</p>
+    <img *ngIf="pair.img != ''" [src]=pair.img>
+  </div>
+</section>
+<section id="math">
+  <div *ngFor="let pair of math">
+    <p *ngIf="pair.paragraph != ''">{{pair.paragraph}}</p>
+    <img *ngIf="pair.img != ''" [src]=pair.img>
+  </div>
+</section>

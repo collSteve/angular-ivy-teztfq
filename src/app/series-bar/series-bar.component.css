@@ -1,0 +1,20 @@
+#gameList a {
+  display: block;
+  padding: var(--game-link-padding) var(--game-link-padding) var(--game-link-padding) 0;
+  color: var(--game-link-color);
+  text-decoration: none;
+}
+#seriesBar {
+  width: var(--series-bar-width);
+  height: var(--bar-height);
+  background-color: var(--seriesBar-background-color);
+}
+#seriesBarTitle{
+  margin: 0;
+  border-bottom: 1px solid #AAAAAA;
+  padding: 10px 10px 10px 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: var(--seriesBar-background-color);
+}

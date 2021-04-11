@@ -1,0 +1,5 @@
+#gameAlt {
+  width: var(--game-width);
+  display: block;
+  margin: auto;
+}

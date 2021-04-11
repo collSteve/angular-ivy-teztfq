@@ -1,0 +1,14 @@
+#barAndBlank {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: var(--top-game-bar-height);
+  width: var(--bar-n-blank-width);
+  display: grid;
+  grid-template-columns: auto auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: var(--bar-height);
+}
+#mainContent {
+  width: var(--main-content-width);
+}

@@ -1,0 +1,14 @@
+#header-dropdown-btn {
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+}
+
+#header-dropdown-btn:hover {
+  cursor: pointer;
+}
+
+#logo h2 {
+  color: white;
+}

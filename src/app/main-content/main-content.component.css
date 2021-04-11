@@ -1,0 +1,16 @@
+#mathImg {
+  display: block;
+  margin: auto;
+}
+img {
+  display: block;
+  margin: auto;
+  width: var(--img-width);
+}
+* {
+  background-color: var(--main-background-color);
+}
+p {
+  width: var(--main-text-width);
+  margin: auto;
+}

@@ -1,0 +1,20 @@
+/* game name band */
+
+#GameBandContainer {
+  margin-left: var(--most-left-margin);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+#GameBandContainer h1 {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+#GameBandLink a {
+  display: inline-block;
+  margin-top: 20px;
+  color: darkgrey;
+  text-align: center;
+}

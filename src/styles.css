@@ -1,0 +1,240 @@
+:root {
+  --body-background-color: grey;
+  --nav-background-color: #101161; /* back ground color for header and footer */
+  --game-name-background-color: #101161;
+  --seriesBar-background-color: grey;
+  --main-background-color: darkgrey;
+  --header-dropdown-background-color: #f0f0f0;
+  --dropdown-links-color: blue;
+  --most-left-margin: 6vw;
+  /* Jay variables below */
+  /* height calculation: top-game-bar-height + bar-height = 100vh*/
+  --top-game-bar-height: 14vh;
+  --bar-height: 92vh;
+  --main-title-color: #dddddd;
+  --game-link-color: #dddddd;
+  /* width calculation:
+  series-bar-width + blank-width + main-content-width = main-width
+  series-bar-width + blank-width = bar-n-blank-width
+  */
+  --series-bar-width: 15vw;
+  --blank-width: 5vw;
+  --bar-n-blank-width: 20vw;
+  --main-content-width: 60vw;
+  --main-width: 80vw;
+  --game-link-padding: 30px;
+  --game-width: 45vw;
+  --main-text-width: 55vw;
+  --img-width: 30vw;
+}
+
+html,
+body,
+#body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  /* for tracking scroll height */
+  height: auto !important;
+}
+
+/*#region first grid: body grid alignment + background color of 5 mian sections */
+#body {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* aside:main = 1:2 */
+  grid-template-rows: 0.2fr 1fr auto minmax(40vh, auto);
+  row-gap: 0.5px;
+  background-color: var(--body-background-color);
+  height: 100vh;
+}
+
+#header {
+  grid-column: 1 /-1;
+  grid-row: 1/2;
+  background-color: var(--nav-background-color);
+}
+
+#GameNameBand {
+  text-align: left;
+  color: white;
+  grid-column: 1 /-1;
+  grid-row: 2/3;
+  background-color: var(--game-name-background-color);
+}
+
+#main {
+  grid-column: 1 /-1;
+  display: grid;
+  grid-template-columns: var(--bar-n-blank-width) var(--main-content-width);
+  width: var(--main-width);
+  margin-left: var(--most-left-margin);
+  margin-right: auto;
+  justify-content: center;
+}
+
+#footer {
+  grid-column: 1 /-1;
+  grid-row: -2/-1;
+  background-color: var(--nav-background-color);
+}
+/*#endregion header grid*/
+#header {
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+#dropDownNav {
+  display: inline-block;
+  grid-column: 1 /2;
+}
+
+#logo {
+  display: inline-block;
+  grid-column: 2 /-2;
+}
+
+#empty {
+  display: inline-block;
+  grid-column: -2 /-1;
+}
+
+/* remove button outline after clicked */
+button:focus {
+  border: none;
+  outline: none;
+}
+
+/* #region  */
+
+/* Jay */
+/* Jay End */
+
+/* Steve */
+/* style dropdown section on top of contents */
+#header {
+  position: relative;
+}
+
+#header-dropdown-section {
+  z-index: 2;
+  width: 100vw;
+  background-color: var(--header-dropdown-background-color);
+  position: absolute;
+  left: 0 !important;
+
+  display: grid; /*grid*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-auto-flow: column;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+
+.header-category {
+  display: block;
+  margin-left: 10px;
+}
+
+.header-category h2 {
+  display: block !important;
+  text-align: left;
+  color: var(--nav-background-color);
+}
+
+.header-category ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header-category li {
+  text-align: left;
+  color: var(--dropdown-links-color);
+}
+
+/* element styles */
+#header button h2 {
+  display: inline-block;
+  line-height: 100%;
+  vertical-align: center;
+}
+
+#header a:link {
+  text-decoration: none;
+  color: white;
+}
+
+#header #logo a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header-category li a:link {
+  color: var(--dropdown-links-color);
+  text-decoration: none;
+}
+
+.header-category li a:visited {
+  color: var(--dropdown-links-color);
+  text-decoration: none;
+}
+
+.header-category li a:hover {
+  text-decoration: underline;
+}
+
+.header-category li a:active {
+  text-decoration: underline;
+}
+
+#dropDownNav {
+  justify-self: start;
+  margin-left: var(--most-left-margin);
+}
+
+/* button */
+/* included in CSS for header component
+#header-dropdown-btn {
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+}
+
+#header-dropdown-btn:hover {
+  cursor: pointer;
+} */
+
+/* game name band */
+#GameNameBand {
+  top: 0;
+}
+/* Included in CSS for Game band
+#GameBandContainer {
+  margin-left: var(--most-left-margin);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+#GameBandContainer h1 {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+#GameBandLink a {
+  display: inline-block;
+  margin-top: 20px;
+  color: darkgrey;
+  text-align: center;
+} */
+
+/* top game bar */
+
+/* Steve End */
+
+/* Jessie */
+
+/* Jessie End */

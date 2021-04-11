@@ -1,0 +1,6 @@
+<aside id="seriesBar">
+  <h2 id="seriesBarTitle">Related Games</h2>
+  <div id="gameList">
+    <a *ngFor="let gameLink of gameLinks" [href]="gameLink.link">{{gameLink.name}}</a>
+  </div>
+</aside>

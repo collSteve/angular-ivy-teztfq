@@ -1,0 +1,17 @@
+<div id="dropDownNav">
+  <button #dropdownBtn type="button" id="header-dropdown-btn" (click)="changeDropDownDisplay()"><span><h2>Games</h2><span [innerHTML]="buttonSpecialChar"></span></span></button>
+
+  <div id="header-dropdown-section" [style.display]="displayStyle" #dropdown>
+    <app-header-nav-sections *ngFor="let category of categories" class="header-category" [category]="category">
+    </app-header-nav-sections>
+  </div>
+</div>
+
+<div id="logo">
+  <h2><a href="#"> <img [src]="logoPath" alt="logo" style="width:40px;"> {{orgName}}</a></h2>
+
+</div>
+
+<div id="empty">
+
+</div>
